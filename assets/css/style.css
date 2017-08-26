@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+}
+
+/* --- header --- */
+
+header {
+	position: absolute;
+	top:0px;
+	width: 100%;
+	padding: 2%;
+	background-color: #008fcc;
+	border-bottom: 5px solid #8d8d8d;
+
+	}
+
+.header-text {
+	position: relative;
+	left: 10%;
+	top: -3%;
+	color: white;
+	font-size: 3em;
+	display: inline;
+	padding:1% 1%;
+	border-radius: 10px;
+	/*border: solid 3px yellow;*/
+
+	}
+
+.header-list {
+	position: relative;
+	word-spacing: 2em;
+	/*border: solid 3px yellow;*/
+	padding: 0;
+	margin: 0;
+	width: 30%;
+	left: 67%;
+	
+	}
+
+
+.header-list > li{  		/* Align menu list horizontally,  make font bold and enlarge font to 1.5em */
+	display: inline;
+	font-weight: bold;
+	font-size: 1.5em;
+	}
+
+a:hover {					/* Set different color when link is hovered */
+    color: orangered;
+    opacity: 0.5;
+   }
+
+   a {
+    text-decoration: none;  /* Elimanate link underlining and set text color to white */
+    color: white;   
+	}
+
+/* --- body --- */
+
+
+body {
+	background-color: Deepskyblue;
+	margin: 0;
+	}
+
+/* The main content box - About Me */
+.main-content { 
+	border: 4px solid #8d8d8d;
+	position: absolute;
+	top: 25%;	
+	left: 10%;
+	width: 50%;
+	background: linear-gradient(white, #f5f5f5, white);
+	box-shadow: 15px 15px 10px rgba(0,0,0, .8);
+	border-radius: 10px;
+
+}
+
+.about-me {
+	margin: 0.5em 0.70em;
+}
+
+.about-me-picture {
+	margin: 0 1.4em;
+	float: left;
+	border-radius: 2%;
+	border-left: 5px solid Deepskyblue;
+	border-right: 5px solid Deepskyblue;
+}
+
+.main-content > p{
+	margin: 0.5em 1.4em 4em;
+}
+
+.hr1 {					/* Add line separator */
+    display: block;
+    border-top: 1px solid #ccc;
+    margin: 1em 1.5em;
+    padding: 0;
+}
+
+.secondary-content {
+	border: 4px solid #8d8d8d;	position: absolute;
+	top: 25%;
+	right: 17.5%;
+	width: 16.5%;
+	height: 18%;
+	background: linear-gradient(white, #f5f5f5, white);
+	text-align: center;
+	box-shadow: 15px 15px 10px rgba(0,0,0, .8);
+	border-radius: 10px;
+}
+
+.hr2 {					/* Add line separator */
+    display: block;
+    border-top: 1px solid #ccc;
+    padding: 0;
+}
+
+.social-media-icons {
+	position: relative;
+	top: -10%;
+	height: 60%;
+	/*border: solid 2px orangered;*/
+}
+
+
+
+.LinkedIn-Picture {
+	width: auto;
+	height: 35%;
+    position: relative;
+    top: 10%;
+	right: 8%;
+}
+
+
+
+.Instagram-Picture {
+	width: auto;
+	height: 35%;
+   	position: relative;
+    top: 10%;
+	}
+	
+.LinkedIn-Picture:hover,  				/* Set icons transparent on hover */
+.Instagram-Picture:hover {					
+    opacity: 0.5;
+    filter: alpha(opacity=50); 			/* For IE8 and earlier */
+   }
+
+/* --- footer --- */
+
+	footer {
+	position: absolute;
+	bottom:0%;
+	width: 100%;
+	text-align: center;
+	border-top: 5px solid #8d8d8d;
+	background-color: #008fcc;
+	}
+
+	.footer {
+	font-weight: bold;
+	color: white;
+	position: relative;
+	top:15%;
+	}
+
+	
+/* Portfolio Page Start */
+
+	.odd-boxes { 
+		float: left;
+		width: 13.4%;
+		/*border: 3px solid green;*/
+		position: absolute;
+		left: 25%;
+		margin: 0;
+		padding: 0;
+		top: 25%;
+		}
+
+	.even-boxes { 
+		float: right;
+		width: 13.4%;
+		/*border: 3px solid green;*/
+		position: absolute;
+		right: 48%;
+		margin: 0;
+		padding: 0;
+		top: 25%;
+		}
+
+	.box {
+		position: relative;
+		margin: 5%;
+		border-top:;
+		border-top: 5px solid #8d8d8d;
+		box-shadow: 15px 15px 10px rgba(0,0,0, .8);
+		border-radius: 10px;
+		}
+
+	.box-image-text {
+		color: white;
+		background: #008fcc;
+		text-align: center;
+		font-weight: bold;
+		position: absolute;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		top: 80%;
+		}
+
+		.box:hover {					/* Set different color when link is hovered */
+	    color: orangered;
+	    opacity: 0.5;
+   		}
+
+   		/* Media Queries -------------------- */
+
+@media (max-width: 1620px) {
+	.header-text {
+	position: relative;
+	left: 7%;
+	top: -3%;
+	color: white;
+	font-size: 2.5em;
+	display: inline;
+	padding:1% 1%;
+	border-radius: 10px;
+	/*border: solid 3px yellow;*/
+
+	}
+
+.header-list {
+	position: relative;
+	word-spacing: 1.5em;
+	/*border: solid 3px yellow;*/
+	font-size: 80%;
+	padding: 0;
+	margin: 0;
+	width: 30%;
+	left: 67%;
+	}
+
+	.main-content { 
+	border: 3.5px solid #8d8d8d;
+	
+}
+
+.about-me-picture {
+	height: 15%;
+}
+
+.main-content > p{
+	margin: 0.5em 1.4em 2em;
+}
+
+.secondary-content {
+	border: 3.5px solid #8d8d8d;	
+	position: absolute;
+	top: 25%;
+	right: 17.5%;
+	width: 16.5%;
+	height: 15%;
+	background: linear-gradient(white, #f5f5f5, white);
+	text-align: center;
+	box-shadow: 15px 15px 10px rgba(0,0,0, .8);
+	border-radius: 10px;
+}
+	.Contact-me-box {
+		font-size: 110%;
+	}
+
+.hr2 {					/* Add line separator */
+    display: block;
+    border-top: 1px solid #ccc;
+    padding: 0;
+
+}
+
+.social-media-icons {
+	position: relative;
+	top: -10%;
+	height: 60%;
+	/*border: solid 2px orangered;*/
+}
+
+.LinkedIn-Picture {
+	width: auto;
+	height: 35%;
+    position: relative;
+    top: 7%;
+	right: 8%;
+	
+}
+
+.Instagram-Picture {
+	width: auto;
+	height: 35%;
+   	position: relative;
+    top: 7%;
+}
+}
+
+
+
+
+
+
+/*.primary-content,
+.secondary-content {
+  width: 20%;
+}}*/
+
+/*
+
+@media (max-width: 768px) {
+.primary-content,
+.secondary-content {
+  width: 100%;
+  padding: 20px;
+  border-top: none;
+}
+.main-header {
+  max-height: 380px;
+  padding: 50px 25px 0;
+}
+.title {
+  font-size: 1.3rem;
+  border-top: none:
+}
+h1 {
+  font-size: 5rem;
+  line-height: 1.1;  
+}
+.arrow {
+  display: none;
+  
+}
+.intro {
+  font-size: 1rem;
+  }
+.resorts,
+.tips {
+  float: none;
+  width: 100%
+}
+.main-footer {
+  padding: 20px 0;
+}
+}
+*/

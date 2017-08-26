@@ -1,0 +1,107 @@
+<!doctype=html>
+
+<head>
+    <!-- Head Start -->
+    <title>Student Bio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets\css\h2style.css">
+</head>
+<header>
+    <nav class="navbar navbarSettings navbar-expand-md navbar-dark bg-primary">
+        <h1 class="navbar-brand brandName" href="#">Sascha Schneider</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbar">
+            <ul class="navbar-nav ml-auto navItems">
+                <li class="nav-item navItems">
+                    <a class="nav-link" href="Portfolio.html" data-target="#myModal" data-toggle="modal">Portfolio</a>
+                </li>
+                <li class="nav-item navItems">
+                    <a class="nav-link" href="index.html" data-target="#myModal" data-toggle="modal">About</a>
+                </li>
+                <li class="nav-item navItems">
+                    <a class="nav-link active" href="contact.html" data-target="#myModal" data-toggle="modal">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <!-- Body Start -->
+    <div class="row row1">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+            <div class="contactForm">
+                <form class="form-horizontal" role="form" method="post" action="index.php">
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="col-sm-2 control-label">Message</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="4" name="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <! Will be used to display an alert to the user>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-2 p-0 m-0">
+        </div>
+        <div class="col-md-1 p-0 m-0">
+            <ul class="list-unstyled SocialMediaIconsNavBar p-0 m-0">
+                <li class="media float-right">
+                    <a href="https://www.linkedin.com/in/sascha-schneider-8954a01b/" target="_blank">
+    <img class="d-flex mr-3 img-fluid SocialMediaIcons" src="assets\images\LinkedIn.png" alt="Social Media Icon: LinkedIn">
+    </a>
+                </li>
+                <li class="media my-4 float-right">
+                    <a href="https://www.linkedin.com/in/sascha-schneider-8954a01b/" target="_blank">
+    <img class="d-flex mr-3 img-fluid SocialMediaIcons" src="assets\images\Instagram.png" alt="Social Media Icon: Instagram">
+    </a>
+                </li>
+                <li class="media float-right">
+                    <img class="d-flex mr-3 img-fluid SocialMediaIcons" src="assets\images\gmail.png" alt="Send Email">
+        </div>
+    </div>
+    </div>
+</body>
+<footer>
+    <!-- Footer Start -->
+    <div class="row row2 text-sm-center">
+        <div class="col-sm-12">
+            <div class="fixed-bottom bg-primary text-light">
+                <p class="footer row2text">&copy; Copyright 2017 Sascha Schneider</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
